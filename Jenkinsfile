@@ -19,7 +19,7 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = 'toastvm'
+      def resourceGroup = 'toast'
       def webAppName = 'toast'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'ashutoast7', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
